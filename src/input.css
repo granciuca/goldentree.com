@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.swiper-pagination-bullet-active {
+    background-color: #B48E2F !important;
+}
+
+.slid-rev1{
+    background-image: linear-gradient(to bottom, #F4EFE8 50%,  #fff 50%);
+}
+
+.plans{
+    background-image: url(../uploads/images/pink-palm-leavs-bg1.png);
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position: relative;
+}
+
+:root {   --swiper-navigation-size: 20px;}
+
+/* .swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+} */
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: rgba(49, 60, 82, 0.4);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    fill: black !important;
+    stroke: black !important;
+}
+
+.price-old::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ABADB2;
+    top: 50%;
+    left: 0;
+}
+
+.reference.active .ref-list{
+    max-height: 500px;
+}
+
+.reference.active ul{
+  max-height: 600px;
+}
+
+.ref-symb.active{
+    transform: rotate(135deg);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 34px;
+  }
+
+
+  .switch .sw-quest{
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    color: #F4EFE8;
+  }
+
+  .switch .sw-rev{
+    z-index: 1;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    color: #F4EFE8;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B48E2F;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    z-index: 2;
+  }
+  
+  input:checked + .slider {
+    background-color: #B48E2F;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #B48E2F;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .active{
+    display: block;
+  }
+
+
+  .display-none{
+    display: none;
+  }
+
+  .footer-menu .ref-symb{
+    display: none;
+  }
+
+  .usage._active{
+    border-bottom: 3px solid #B48E2F;
+  }
+
+  .reference .ref-list-usage{
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .reference.active .ref-list-usage{
+    max-height: 1000px;
+  }
+
+
+  @media (max-width:890px) {
+    .footer-menu ul{
+      max-height: 0;
+      overflow: hidden;
+    }
+
+    .footer-menu .ref-symb{
+      display: flex;
+    }
+    
+
+  }
